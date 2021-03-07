@@ -359,7 +359,6 @@ function GenerateTimeTable(timetable, id, timetableName) {
 function GenerateTimeTable2(timetable, id, timetableName) {
     const timetableParent = document.querySelector(".TimeTable");
     timetableParent.innerHTML = "";
-    TimetableManager.querySelector("h1").textContent = timetableName.toString();
     const differentDays = GetDifferentDays(timetable);
 
     let index = 0;
