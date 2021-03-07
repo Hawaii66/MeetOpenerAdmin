@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    background: #ecf0f1
+}
+
+
+/* LOGIN */
+
+.NotLoggedIn {
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+}
+
+.LoginTab {
+    padding: 1em 1em;
+    border-style: groove;
+}
+
+.LoginTab h1 {
+    color: #2c3e50;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+.LoginTab h2 {
+    color: #2c3e50;
+    font-size: large;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+.SignUpError h3 {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    color: #c0392b;
+}
+
+.LoginError h3 {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    color: #c0392b;
+}
+
+
+/* LOG OUT BUTTON */
+
+.LogOut button {
+    background-color: #34495e;
+    margin-left: 1em;
+    margin-top: 1em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    width: 5em;
+    height: 2em;
+    border-radius: 7%;
+    font-size: larger;
+    color: #ecf0f1;
+}
+
+
+/* Previous Timetables */
+
+.PreviousTimetables {
+    margin-top: 2em;
+    margin-left: 2%;
+    width: 20%;
+}
+
+.PreviousTimetables ul {
+    border: 2px solid #000;
+    list-style-type: none;
+    margin-bottom: 3em;
+    width: 95%;
+    padding: 0.5em 0.5em;
+}
+
+.PreviousTimetables li {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: larger;
+    color: #34495e;
+}
+
+.PreviousTimetables h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+
+/* TIMETABLE */
+
+.TimeTableManager h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+.TimeTable {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    color: #2c3e50;
+}
+
+.TimeTableDay {
+    border: black solid;
+}
+
+.TimeTableHeader {
+    margin-top: 2%;
+}
+
+.TimeTableLecture {
+    margin: 1em 1em;
+    border: black solid;
+    border-radius: 7px;
+}
+
+.DeleteTimetable {
+    margin-top: 1em;
+    margin-right: 7em;
+    text-align: right;
+    font-size: larger;
+}
+
+
+/* Create New Lecture */
+
+.CreateNewLecture {
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    text-align: center;
+    border-style: groove;
+    border-width: 3px;
+    border-radius: 4%;
+    color: #2c3e50;
+    border-color: black;
+}
+
+.CreateNewLecture h2 {
+    text-align: center;
+    margin-top: 0.5em;
+}
+
+.CreateNewLecture select {
+    margin-bottom: 0.5em;
+}
+
+
+/* New timetable */
+
+.NewTimetablePromt {
+    text-align: center;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-style: groove;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.NewTimetablePromt h1 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: #2c3e50;
+}
+
+.NewTimetablePromt h2 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: #2c3e50;
+}
+
+.NewTimetableError h2 {
+    color: #c0392b;
+}

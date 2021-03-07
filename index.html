@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Opener Admin</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/7d5ae2414e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="NotLoggedIn">
+        <div class="SignIn LoginTab">
+            <h1>Sign In</h1>
+            <form id="Login">
+                <h2>Name</h2>
+                <input type="text" name="LoginName" id="LoginName" />
+                <h2>Password</h2>
+                <input type="number" name="LoginPassword" id="LoginPassword" />
+                <button>Login</button>
+            </form>
+            <div class="LoginError">
+                <h3>Error: With logging in</h3>
+            </div>
+        </div>
+        <div class="SignUp LoginTab">
+            <h1>Sign Up</h1>
+            <form id="SignUp">
+                <h2>Name</h2>
+                <input type="text" name="SignUpName" id="SignUpName" />
+                <h2>Password</h2>
+                <input type="number" name="SignUpPassword" id="SignUpPassword" />
+                <button>Sign Up</button>
+            </form>
+            <div class="SignUpError">
+                <h3>Error: With signing up</h3>
+            </div>
+        </div>
+    </div>
+    <div class="LoggedIn">
+        <div class="LogOut">
+            <button class="Logout" onclick="LogOut()">Log Out</button>
+        </div>
+        <div class="PreviousTimetables">
+            <h1>Timetabels</h1>
+            <div class="OwnedTimeTables">
+                <ul>
+                    <li>
+                        <a href="# " onclick="Test(1); return false">Test</a>
+                    </li>
+                    <li>
+                        <a href="# " onclick="Test(2); return false">Test</a>
+                    </li>
+                    <li>
+                        <a href="# " onclick="Test(3); return false">Test</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="NewTimetablePromt">
+            <form id="NewTimetableDefaultSettings">
+                <h1>Create A new Timetable</h1>
+                <h2>Name</h2>
+                <input type="text" name="NewTimetableDefaultName" id="NewTimetableDefaultName" />
+                <h2>Password</h2>
+                <input type="number" name="NewTimetableDefaultPassword" id="NewTimetableDefaultPassword" />
+                <h2>One Minute Before</h2>
+                <input type="checkbox" name="NewTimetableDefaultOneMinuteBefore" id="NewTimetableDefaultOneMinuteBefore" />
+                <button>Create New Timetable</button>
+            </form>
+            <div class="NewTimetableError">
+                <h2>Error: With creating timetable</h2>
+            </div>
+        </div>
+        <div class="TimeTableManager">
+            <h1>Timetable: Open to the left</h1>
+            <div class="TimetableError">
+                <h2>Error: With saving data</h2>
+            </div>
+            <div class="TimeTable"></div>
+            <div class="DeleteTimetable" onclick="DeleteCurrentTimetable()">
+                <i class="fas fa-trash-alt"></i>
+            </div>
+        </div>
+        <div class="CreateNewLecture">
+            <form id="createLectureInExistingTimetable">
+                <h2>Name</h2>
+                <input type="text" name="createLectureInName" id="createLectureInName" />
+                <h2>Link</h2>
+                <input type="text" name="createLectureInLink" id="createLectureInLink" />
+                <h2>Time</h2>
+                <input type="time" name="createLectureInTime" id="createLectureInTime" />
+                <h2>Day</h2>
+                <select name="createLectureInDay" id="createLectureInDay">
+            <option value="Mo">Monday</option>
+            <option value="Tu">Tuesday</option>
+            <option value="We">Wednesday</option>
+            <option value="Th">Thursday</option>
+            <option value="Fr">Friday</option>
+            <option value="Sa">Saturday</option>
+            <option value="Su">Sunday</option>
+          </select>
+                <button>Save class</button>
+            </form>
+            <div class="CreateNewLectureError">
+                <h2>Error: With creating a new class</h2>
+            </div>
+        </div>
+    </div>
+    <br />
+    <script src="client.js"></script>
+</body>
+
+</html>
